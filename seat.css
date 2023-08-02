@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.plane {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cockpit {
+  background-color: #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+/*
+.exit {
+  width: 50px;
+  height: 50px;
+  background-color: #999;
+  border-radius: 25px;
+  position: absolute;
+  top: 20px;
+  left: 20%;
+  transform: translateX(-50%);
+}
+*/
+.exit--front {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.fuselage {
+  width: 600px;
+  background-color: #ccc;
+  border-radius: 10px;
+  position: relative;
+  margin-top: 20px;
+}
+
+.cabin {
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.seats {
+  display: flex;
+}
+
+.seat {
+  background-color: #fff;
+  border: 1px solid #999;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.seat input[type="checkbox"]:disabled + label {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+input[type="submit"] {
+  position: relative;
+  background-color: aquamarine;
+  background-size: auto;
+  width: 103px;
+  height: 50px;
+  left: 600px;
+}
